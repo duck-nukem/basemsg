@@ -36,7 +36,7 @@ def make_message(message: str) -> None:
         for index, permutation in enumerate(case_permutations):
 
             if _CONFIG.getboolean('main', 'anim8'):
-                sleep(0.1)
+                sleep(0.05)
 
             print(f'[green]{complete_resolved_string}[/green][yellow]{permutation}[/yellow]', end='\r')
             debug(permutation)
